@@ -4,6 +4,8 @@ import App from './App'
 import './index.css'
 import { BrowserRouter } from "react-router-dom"
 
+export const apiURL = "https://api.mayocompagnie.fr";
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>

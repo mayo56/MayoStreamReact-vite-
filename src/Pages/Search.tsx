@@ -1,12 +1,14 @@
 import React from 'react';
 import NavBar from '../Components/Home/NavBar';
+import Result from '../Components/Search/Result';
 
-const Home = () => {
+const Search = () => {
     return (
         <div>
             <NavBar />
+            <Result />
         </div>
     );
 };
 
-export default Home;
+export default Search;
