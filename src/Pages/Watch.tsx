@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../Components/Home/NavBar';
 import Video from '../Components/Watch/Video';
 

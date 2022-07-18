@@ -17,7 +17,6 @@ const Result = () => {
             method: "get",
             url: `${apiURL}/stream/search/${params.name}`,
         }).then(res => {
-            console.log(res.data)
             if (res.data.noVideo) {
                 setStatus({ isReply: true, error: "Aucune vidéos trouvés" })
                 return
