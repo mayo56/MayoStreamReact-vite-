@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [search, setSearch] = useState<string>();
-    let nav = useNavigate()
 
     const onSearch = () => {
         if (!search?.trim()) return;
-        nav(`/search/${search}`);
+        window.location.href = `/search/${search}`;
     };
 
     return (
@@ -22,7 +21,7 @@ const NavBar = () => {
 
             <div className='flex justify-center h-[50%] items-center w-[80%] max-w-[900px] mr-[20px] ml-[20px]'>
                 <input type="text" className="w-[100%] h-[100%] bg-gray-500 p-[5px] rounded-l-lg resize-none outline-none"
-                    value={search} onChange={e => setSearch(e.target.value)} />
+                    value={search} onChange={e => setSearch(e.target.value)} placeholder="Rechercher une vidéo" />
 
                 <div className='hover:bg-red-500 w-[30px] h-[30px] cursor-pointer text-[125%] bg-gray-500 rounded-r-lg border-l-2' onClick={onSearch}>
                     <h1>🔎</h1>
