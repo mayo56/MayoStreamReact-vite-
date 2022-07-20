@@ -38,7 +38,7 @@ const Video = () => {
                     (
                         <div className='m-auto w-screen text-white'>
                             <div className='m-auto xl:w-[1280px]'>
-                                <video id="video" className='max-h-[714px] xl:w-[1280px] bg-transparent' autoPlay={false} controls>
+                                <video id="video" className='max-h-[714px] xl:w-[1280px] bg-transparent' autoPlay={true} controls>
                                     <source src={`${apiURL}/stream/${infoVideo.id}.${infoVideo.extention}`} />
                                 </video>
 
