@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const VideoForm = () => {
     const [title, setTitle] = useState<string>("");
-
+    
     return (
         <div className='mt-[10px] text-center'>
             <h1 className='font-bold text-[30px]'>Ajouter une vidéo ! Trop cool !!</h1>
