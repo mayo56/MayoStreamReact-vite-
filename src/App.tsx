@@ -6,8 +6,6 @@ import Search from './Pages/Search'
 import Watch from './Pages/Watch'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       <Routes>
